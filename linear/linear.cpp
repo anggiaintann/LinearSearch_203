@@ -45,7 +45,7 @@ void LinearSearch()
 		cin >> item;
 
 		comparison = 0;
-		if (i = 0; i < n; i++) //langkah 2,3, dan 4
+		for (i = 0; i < n; i++) //langkah 2,3, dan 4
 		{
 			comparison++;
 			if (arr[i] == item) //langkah 5 a found
@@ -62,4 +62,12 @@ void LinearSearch()
 		cout << "\nContinue search (y/n): ";
 		cin >> ch;
 	} while ((ch == 'y') || (ch == 'Y'));
+}
+
+int main()
+{
+	input();
+	LinearSearch();
+
+	return 0;
 }
